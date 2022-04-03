@@ -1,7 +1,8 @@
 import React from "react";
-//OKKKKK
+import Home from "./Home.jsx";
+
 export default () => (
 	<>
-		<h1>App</h1>
+		<Home />
 	</>
 );
