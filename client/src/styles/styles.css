@@ -77,7 +77,7 @@ html {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 1.2s steps(100, end);
+    typing 1s steps(120, end);
 
 
 /* The typing effect */
@@ -91,7 +91,7 @@ html {
   font-weight: bold;
   position: relative;
   top: 40px;
-  animation: fadein 4s;
+  animation: fadein 3s;
 }
 @keyframes fadein {
   from {
