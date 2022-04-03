@@ -20,16 +20,13 @@ html
   position: absolute
   z-index: -1
 
-.home__logo-img
-  height: 6rem
-  margin-right: auto
-
 .header-content-wrapper
   width: 50%
   height: 80%
   float: right
   display: flex
   align-items: center
+  animation: 1s fadein
   .header-content
     display: flex
     flex-direction: column
@@ -40,8 +37,15 @@ html
       font-size: 4rem
       margin: 0 auto 3rem
     .content
+      width: fit-content
       font-size: 2rem
       font-weight: bold
+      padding-inline: .25rem
+      border-right: 2px solid orange
+      animation: 1.5s blink infinite
+    .content-placeholder
+      @extend .content
+      visibility: hidden
     .buttons
       width: 75%
       display: flex
@@ -56,3 +60,17 @@ button
   background-color: #ffffff14
   font-weight: bold
   font-size: 2rem
+
+@keyframes fadein
+  0%
+    margin-top: -10rem
+    opacity: 0
+  100%
+    margin-top: 0
+    opacity: 1
+
+@keyframes blink
+  0%, 25%, 75%, 100%
+    border: 2px solid transparent
+  26%, 50%, 74%
+      border-right: 2px solid orange
