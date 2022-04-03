@@ -1,0 +1,49 @@
+.stats__bg-img {
+  height: 130%;
+  position: absolute;
+  z-index: -1;
+}
+
+.stats {
+  height: 100vh;
+}
+.stats .chart {
+  margin-top: 29rem;
+  border-radius: 2rem;
+  margin-left: 2rem;
+}
+.stats .header-content-wrapper {
+  poisition: absolute;
+  width: 50%;
+  height: 80%;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.stats .header-content-wrapper iframe {
+  border-radius: 2rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.stats .header-content-wrapper .header-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30rem;
+}
+.stats .header-content-wrapper .header-content .header {
+  font-size: 3rem;
+  margin: 0 auto 3rem;
+}
+.stats .header-content-wrapper .header-content .content {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stats .header-content-wrapper .header-content .buttons {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem auto 0;
+  gap: 1.5rem;
+}

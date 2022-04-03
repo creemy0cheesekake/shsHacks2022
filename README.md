@@ -1,5 +1,5 @@
 # CONTRIBUTERS
-Install `Live Sass Compiler` by Glenn Marks and `Sass` by Syler from the VSCode extension marketplace.
+Install `Live Sass Compiler` by Glenn Marks and `Sass` by Syler and `Prettier` by Prettier from the VSCode extension marketplace.
 Also add
 ```
 	"liveSassCompile.settings.generateMap": false,

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Archivo", sans-serif;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+html {
+  background-color: black;
+}
+
+.home__bg-img {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.home__logo-img {
+  height: 6rem;
+  margin-right: auto;
+}
+
+.home {
+  height: 100vh;
+}
+.home .header-content-wrapper {
+  width: 50%;
+  height: 80%;
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.home .header-content-wrapper .header-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.home .header-content-wrapper .header-content .header {
+  width: fit-content;
+  border-bottom: 2px solid #D8423E;
+  font-size: 4rem;
+  margin: 0 auto 3rem;
+}
+.home .header-content-wrapper .header-content .content {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.home .header-content-wrapper .header-content .buttons {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem auto 0;
+  gap: 1.5rem;
+}
+
+button {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.0784313725);
+  font-weight: bold;
+  font-size: 2rem;
+}
