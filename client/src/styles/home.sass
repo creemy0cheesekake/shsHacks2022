@@ -9,7 +9,6 @@
   color: white
   text-decoration: none
 
-
 html
   background-color: black
 
@@ -24,30 +23,39 @@ html
 .home
   height: 100vh
   .header-content-wrapper
-    width: 50%
-    height: 80%
-    float: right
+  width: 50%
+  height: 80%
+  float: right
+  display: flex
+  align-items: center
+  animation: 1s fadein
+  .header-content
     display: flex
-    align-items: center
-    .header-content
+    flex-direction: column
+    text-align: center
+    .header
+      width: fit-content
+      border-bottom: 2px solid #D8423E
+      font-size: 4rem
+      margin: 0 auto 3rem
+    .content
+      width: fit-content
+      font-size: 2rem
+      font-weight: bold
+      padding-inline: .25rem
+      border-right: 2px solid orange
+      animation: 1.5s blink infinite
+    .content-placeholder
+      @extend .content
+      visibility: hidden
+    .buttons
+      width: 75%
       display: flex
-      flex-direction: column
-      text-align: center
-      .header
-        width: fit-content
-        border-bottom: 2px solid #D8423E
-        font-size: 4rem
-        margin: 0 auto 3rem
-      .content
-        font-size: 2rem
-        font-weight: bold
-      .buttons
-        width: 75%
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-evenly
-        margin: 2rem auto 0
-        gap: 1.5rem
+      flex-wrap: wrap
+      justify-content: space-evenly
+      margin: 2rem auto 0
+      gap: 1.5rem
+
 
 
 button
@@ -55,3 +63,17 @@ button
   background-color: #ffffff14
   font-weight: bold
   font-size: 2rem
+
+@keyframes fadein
+  0%
+    margin-top: -10rem
+    opacity: 0
+  100%
+    margin-top: 0
+    opacity: 1
+
+@keyframes blink
+  0%, 25%, 75%, 100%
+    border: 2px solid transparent
+  26%, 50%, 74%
+      border-right: 2px solid orange
