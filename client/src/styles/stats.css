@@ -1,5 +1,6 @@
 .stats__bg-img {
-  height: 130%;
+  width: 100%;
+  height: auto;
   position: absolute;
   z-index: -1;
 }
@@ -7,29 +8,27 @@
 .stats {
   height: 100vh;
 }
-.stats .chart {
-  margin-top: 29rem;
-  border-radius: 2rem;
-  margin-left: 2rem;
+.stats .iframes {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.stats .iframes iframe {
+  border-radius: 1rem;
+  height: 25rem;
+  width: 25rem;
 }
 .stats .header-content-wrapper {
-  poisition: absolute;
   width: 50%;
-  height: 80%;
+  padding-block: 10rem;
   float: right;
   display: flex;
   align-items: center;
-}
-.stats .header-content-wrapper iframe {
-  border-radius: 2rem;
-  margin-top: 5rem;
-  margin-left: 2rem;
 }
 .stats .header-content-wrapper .header-content {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 30rem;
 }
 .stats .header-content-wrapper .header-content .header {
   font-size: 3rem;

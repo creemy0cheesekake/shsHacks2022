@@ -1,8 +1,9 @@
 import React from "react";
-import Home from "./Home.jsx";
+import Home from "./components/Home";
+import Statistics from "./components/Statistics";
 
 export default () => (
 	<>
-		<Home />
+		<Statistics />
 	</>
 );

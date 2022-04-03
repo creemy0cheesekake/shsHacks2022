@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-import "./styles/home.css";
-import covidBg from "./assets/covid-bg.png";
+import "../styles/home.css";
+import covidBg from "../assets/covid-bg.png";
 
 import MenuBar from "./MenuBar";
 

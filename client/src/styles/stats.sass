@@ -2,31 +2,31 @@
 
 
 .stats__bg-img
-  height: 130%
+  width: 100%
+  height: auto//120%
   position: absolute
   z-index: -1
+
 .stats
   height: 100vh
-  .chart
-    margin-top:29rem
-    border-radius:2rem
-    margin-left:2rem
+  .iframes
+    display: flex
+    gap: 1rem
+    margin-top: 5rem
+    iframe
+      border-radius: 1rem
+      height: 25rem
+      width: 25rem
   .header-content-wrapper
-    poisition: absolute
     width: 50%
-    height: 80%
+    padding-block: 10rem
     float: right
     display: flex
     align-items: center
-    iframe
-      border-radius:2rem
-      margin-top: 5rem
-      margin-left: 2rem
     .header-content
       display: flex
       flex-direction: column
       text-align: center
-      margin-top: 30rem
       .header
         font-size: 3rem
         margin: 0 auto 3rem
