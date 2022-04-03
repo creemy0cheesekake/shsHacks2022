@@ -4,17 +4,59 @@ import logo from "../assets/Logo.png";
 import covidStatsBg from "../assets/covid-stats-bg.png";
 
 import MenuBar from "./MenuBar";
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+
+// function Vaccination() {
+//   return (
+//     <div className="stats">
+//       <img src={covidStatsBg} alt="covid virus image" className="stats__bg-img" />
+//       <MenuBar />
+//       <div>
+//         <h3>Vaccination</h3>
+//       </div>
+//     </div>
+//   );
+// }
+const containerStyle = {
+  width: '400px',
+  height: '400px'
+};
+
+const center = {
+  lat: -3.745,
+  lng: -38.523
+};
 
 function Vaccination() {
-  return (
-    <div className="stats">
-      <img src={covidStatsBg} alt="covid virus image" className="stats__bg-img" />
-      <MenuBar />
-      <div>
-        <h3>Vaccination</h3>
-      </div>
-    </div>
-  );
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "AIzaSyAuipmPcBwfD4M5iBNc90-2r0Bl0caPpDM"
+  })
+
+  const [map, setMap] = React.useState(null)
+
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds();
+    map.fitBounds(bounds);
+    setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+  return isLoaded ? (
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+        { /* Child components, such as markers, info windows, etc. */ }
+        <></>
+      </GoogleMap>
+  ) : <></>
 }
 
-export default Vaccination;
+export default React.memo(Vaccination);
