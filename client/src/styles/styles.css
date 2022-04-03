@@ -22,6 +22,7 @@ html {
   position: absolute;
   z-index: -1;
 }
+
 .home__logo-img {
   width: 300px;
   position: absolute;
@@ -54,6 +55,7 @@ html {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
 .header-content-wrapper {
   width: 50%;
   height: 80%;
@@ -73,6 +75,7 @@ html {
   border-bottom: 2px solid #D8423E;
   font-size: 4rem;
   margin: 0 auto 3rem;
+
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -85,10 +88,12 @@ html {
   from { width: 0 }
   to { width: 100% }
 }
+
 }
 .header-content-wrapper .header-content .content {
   font-size: 2rem;
   font-weight: bold;
+
   position: relative;
   top: 40px;
   animation: fadein 3s;
