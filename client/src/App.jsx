@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./Home.jsx";
-import Vaccinations from "./Vaccinations"
 
+import Home from "./Home";
+import Statistics from "./Statistics";
 
 export default () => (
 	<>
-		<Vaccinations/>
+		<Statistics />
 	</>
 );
